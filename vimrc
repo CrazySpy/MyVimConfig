@@ -1,5 +1,7 @@
 set nocompatible
-colorscheme darkblue
+
+syntax on
+colorscheme torte
 set number
 set cursorline
 
@@ -7,8 +9,8 @@ set softtabstop=4
 set shiftwidth=4
 set cmdheight=1
 set smartindent
+set laststatus=2
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
-" 设置在状态行显示的信息
 
 set guifont=Source\ Code\ Pro:h16
 
@@ -37,6 +39,10 @@ autocmd VimLeavePre SaveSession
 :let g:ycm_error_symbol = '✗'
 :let g:ycm_warning_symbol = '⚠'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+:let g:ycm_always_populate_location_list = 1
+inoremap <D-d> <ESC>:YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <D-d> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 
 
 nmap <D-f2> :NERDTreeToggle<CR>
