@@ -1,5 +1,6 @@
 set nocompatible
 
+
 syntax on
 colorscheme torte
 set number
@@ -31,17 +32,20 @@ Plugin 'skywind3000/vimmake'
 call vundle#end()
 filetype plugin indent on
 
-:let g:session_default_overwrite = 1
-:let g:session_autoload = "yes"
+let g:session_default_overwrite = 1
+let g:session_autoload = "yes"
 autocmd VimLeavePre SaveSession
-:let g:session_autosave = "no"
+let g:session_autosave = "no"
 
-:let g:ycm_error_symbol = '✗'
-:let g:ycm_warning_symbol = '⚠'
+let g:ycm_error_symbol = '✗'
+let g:ycm_warning_symbol = '⚠'
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-:let g:ycm_always_populate_location_list = 1
+let g:EclimCompletionMethod = 'omnifunc'
+
+let g:ycm_always_populate_location_list = 1
 inoremap <D-d> <ESC>:YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <D-d> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 
 
@@ -57,5 +61,8 @@ inoremap <D-f5> <ESC>:VimTool run<CR>
 noremap <D-f6> :VimTool compile<CR>
 inoremap <D-f6> <ESC>:VimTool compile<CR>
 
-:let g:lt_location_list_toggle_map = '<D-f3>'
-:let g:lt_quickfix_list_toggle_map = '<D-f4>'
+let g:lt_location_list_toggle_map = '<D-f3>'
+let g:lt_quickfix_list_toggle_map = '<D-f4>'
+
+noremap <D-f7> :TagbarToggle<CR>
+inoremap <D-f7> <ESC>:TagbarToggle<CR>
