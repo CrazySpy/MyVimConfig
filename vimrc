@@ -2,7 +2,8 @@ set nocompatible
 
 
 syntax on
-colorscheme torte
+'colorscheme torte
+colorscheme solarized
 set number
 set cursorline
 
