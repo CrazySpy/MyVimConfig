@@ -16,6 +16,10 @@ set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:
 
 set guifont=Source\ Code\ Pro:h16
 
+'arctouch还是关闭中键粘贴
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -52,6 +56,8 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 nmap <D-f2> :NERDTreeToggle<CR>
 imap <D-f2> <ESC>:NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 let g:vimmake_path = '~/.vim/VimmakeConfig'
 let g:vimmake_mode = { 'compile':'async','run':'normal' }
