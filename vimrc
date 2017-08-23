@@ -50,8 +50,7 @@ let g:EclimCompletionMethod = 'omnifunc'
 let g:ycm_always_populate_location_list = 1
 inoremap <D-d> <ESC>:YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <D-d> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
-
+let g:ycm_key_list_stop_completion = ['<CR>']
 
 
 nmap <D-f2> :NERDTreeToggle<CR>
