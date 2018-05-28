@@ -2,7 +2,7 @@ set nocompatible
 
 
 syntax on
-'colorscheme torte
+"colorscheme torte
 colorscheme solarized
 set number
 set cursorline
@@ -16,7 +16,7 @@ set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:
 
 set guifont=Source\ Code\ Pro:h16
 
-'arctouch还是关闭中键粘贴
+"arctouch还是关闭中键粘贴
 map <MiddleMouse> <Nop>
 imap <MiddleMouse> <Nop>
 
