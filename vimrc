@@ -7,6 +7,7 @@ colorscheme solarized
 set number
 set cursorline
 
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set cmdheight=1
