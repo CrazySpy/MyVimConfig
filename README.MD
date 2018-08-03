@@ -2,7 +2,7 @@ MacVim配置文件
 ====
 用于MacVim的vim配置文件。用于纯vim上不保证功能完整i。
 
-###使用方法
+使用方法
 ------
 1. 请将solarized.vim配色文件放到~/.vim/colors/下
 2. 安装[Vundle](https://github.com/VundleVim/Vundle.vim#quick-start)插件管理工具
@@ -13,7 +13,7 @@ MacVim配置文件
 
 默认设置
 -----
-###本配置文件使用了以下插件
+#### 本配置文件使用了以下插件
 1. Vundle 用于插件快速安装、禁用
 2. YouCompleteMe 用于快速补全
 3. vim-session 用于记住上次打开窗口等功能
@@ -25,7 +25,7 @@ MacVim配置文件
 9. vim-misc vim的支持库
 10. vimmake 快速编译代码
 
-###本配置文件默认快捷键
+#### 本配置文件默认快捷键
 * 鼠标中键粘贴关闭(因为我的arctouch容易误触)
 * Command+D:Go to definition (YouCompleteMe提供)
 * Command+F2:打开目录树窗口 (nerdtree提供)
