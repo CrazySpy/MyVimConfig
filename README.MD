@@ -1,6 +1,6 @@
 MacVim配置文件
 ====
-用于MacVim的vim配置文件。用于纯vim上不保证功能完整i。
+用于MacVim的vim配置文件
 
 使用方法
 ------
