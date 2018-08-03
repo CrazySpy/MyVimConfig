@@ -1,36 +1,34 @@
 MacVim配置文件
 ====
+用于MacVim的vim配置文件。用于纯vim上不保证功能完整i。
 
-介绍
------
-本配置文件使用了以下插件:
-### 1.Vundle 用于插件快速安装、禁用
-### 2.YouCompleteMe 用于快速补全
-### 3.vim-session 用于记住上次打开窗口等功能
-### 4.nerdtree 目录树
-### 5.ListToggle 用于快速toggle打开/关闭vim窗口
-### 6.delimitMate 快速代码格式化
-### 7.tagbar 显示代码中的函数、变量、类等，并且可以快速定位
-### 8.tabular 文本快速对齐
-### 9.vim-misc vim的支持库
-### 10.vimmake 快速编译代码
-
-使用方法
+###使用方法
 ------
-### 1.请将solarized.vim配色文件放到~/.vim/colors/下
-### 2.安装Vundle插件管理工具
-具体请参考
+1.请将solarized.vim配色文件放到~/.vim/colors/下
+2.安装Vundle插件管理工具
 	>https://github.com/VundleVim/Vundle.vim#quick-start
-### 3.在MacVim的normal模式下输入":PluginInstall"安装所有插件
-### 4.编译安装YouCompleteMe
-具体参考
+3.在MacVim的normal模式下输入":PluginInstall"安装所有插件
+4.编译安装YouCompleteMe
 	>https://github.com/Valloric/YouCompleteMe#installation
-###	5.配置vimmake
-具体参考
+5.配置vimmake
 	>https://github.com/skywind3000/vimmake
+
 
 默认设置
 -----
+###本配置文件使用了以下插件
+1.Vundle 用于插件快速安装、禁用
+2.YouCompleteMe 用于快速补全
+3.vim-session 用于记住上次打开窗口等功能
+4.nerdtree 目录树
+5.ListToggle 用于快速toggle打开/关闭vim窗口
+6.delimitMate 快速代码格式化
+7.tagbar 显示代码中的函数、变量、类等，并且可以快速定位
+8.tabular 文本快速对齐
+9.vim-misc vim的支持库
+10.vimmake 快速编译代码
+
+###本配置文件默认快捷键
 *鼠标中键粘贴关闭(因为我的arctouch容易误触)
 *Command+D:Go to definition (YouCompleteMe提供)
 *Command+F2:打开目录树窗口 (nerdtree提供)
