@@ -4,6 +4,7 @@ set nocompatible
 syntax on
 "colorscheme torte
 colorscheme solarized
+set background=dark
 set number
 set cursorline
 
@@ -15,7 +16,7 @@ set smartindent
 set laststatus=2
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
 
-set guifont=Source\ Code\ Pro:h16
+set guifont=Source\ Code\ Pro:h14
 
 "arctouch还是关闭中键粘贴
 map <MiddleMouse> <Nop>
@@ -39,9 +40,9 @@ call vundle#end()
 filetype plugin indent on
 
 let g:session_default_overwrite = 1
-let g:session_autoload = "yes"
+let g:session_autoload = "no"
 autocmd VimLeavePre SaveSession
-let g:session_autosave = "no"
+let g:session_autosave = "yes"
 
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '⚠'
