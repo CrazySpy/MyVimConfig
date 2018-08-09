@@ -19,11 +19,11 @@ MacVim配置文件
 3. vim-session 用于记住上次打开窗口等功能
 4. nerdtree 目录树
 5. ListToggle 用于快速toggle打开/关闭vim窗口
-6. delimitMate 快速代码格式化
+6. delimitMate 括号等的自动匹配补全
 7. tagbar 显示代码中的函数、变量、类等，并且可以快速定位
-8. tabular 文本快速对齐
-9. vim-misc vim的支持库
-10. vimmake 快速编译代码
+8. vim-misc vim的支持库
+9. vimmake 快速编译代码
+10. vim-scripts/php.vim-html-enhanced 对HTML代码缩进
 
 #### 本配置文件默认快捷键
 * 鼠标中键粘贴关闭(因为我的arctouch容易误触)
@@ -34,8 +34,4 @@ MacVim配置文件
 * Command+F5:运行当前程序，前提是已经编译或可以进行解释。具体配置参照vimmake(由vimmake提供)
 * Command+F6:编译，配置请参照vimmake (由vimmake提供)
 * Command+F7:函数、变量、类等列表窗口 (由tagbar提供)
-* +:代码格式化 (由delimitMate提供)
-
-
-
-
+其它快捷键请参考vim及MacVim官方文档

@@ -26,13 +26,15 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+:
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'xolox/vim-session'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/ListToggle'
+Plugin 'vim-scripts/php.vim-html-enhanced'
 Plugin 'Raimondi/delimitMate'
 Plugin 'majutsushi/tagbar'
-Plugin 'godlygeek/tabular'
+"Plugin 'godlygeek/tabular'
 Plugin 'xolox/vim-misc'
 Plugin 'skywind3000/vimmake'
 "Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
