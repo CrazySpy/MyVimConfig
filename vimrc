@@ -30,7 +30,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'xolox/vim-session'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/ListToggle'
-Plugin 'vim-scripts/php.vim-html-enhanced'
+"Plugin 'vim-scripts/php.vim-html-enhanced'
+Plugin 'othree/html5.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'majutsushi/tagbar'
 "Plugin 'godlygeek/tabular'
@@ -75,3 +76,6 @@ let g:lt_quickfix_list_toggle_map = '<D-f4>'
 
 noremap <D-f7> :TagbarToggle<CR>
 inoremap <D-f7> <ESC>:TagbarToggle<CR>
+
+
+set sw=4

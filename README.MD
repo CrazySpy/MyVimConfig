@@ -23,7 +23,7 @@ MacVim配置文件
 7. tagbar 显示代码中的函数、变量、类等，并且可以快速定位
 8. vim-misc vim的支持库
 9. vimmake 快速编译代码
-10. vim-scripts/php.vim-html-enhanced 对HTML代码缩进
+10. html5 对HTML代码缩进
 
 #### 本配置文件默认快捷键
 * 鼠标中键粘贴关闭(因为我的arctouch容易误触)
