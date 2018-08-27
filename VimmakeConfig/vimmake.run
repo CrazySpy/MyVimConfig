@@ -1,0 +1,31 @@
+cd "$VIM_FILEDIR"
+
+case "$VIM_FILEEXT" in 
+	\.c|\.cpp|\.cc|\.cxx|\.go)
+		"$VIM_FILEDIR/$VIM_FILENOEXT"
+		;;
+	\.py|\.pyw)
+		python3 "$VIM_FILENAME"
+		;;
+	\.pl)
+		perl "$VIM_FILENAME"
+		;;
+	\.lua)
+		lua "$VIM_FILENAME"
+		;;
+    	\.rb)
+		ruby "$VIM_FILENAME"
+		;;
+  	\.java)
+		java "$VIM_FILENOEXT"
+		;;
+	\.js)
+		node "$VIM_FILENAME"
+		;;
+	\.php)
+		php "$VIM_FILENAME"
+		;;
+	*)
+		echo "unexpected file type: $VIM_FILEEXT"
+		;;
+esac

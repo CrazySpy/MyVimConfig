@@ -1,0 +1,22 @@
+cd "$VIM_FILEDIR"
+
+case "$VIM_FILEEXT" in 
+	\.cpp|\.cxx)
+		clang++ "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g -std="c++11"
+		;;
+    \.c|\.cc)
+		clang "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g
+		;;
+    \.go)
+	    go build "$VIM_FILEPATH"
+		;;
+    \.java)
+	    javac -g -J-Duser.language=en "$VIM_FILEPATH"
+		;;
+	\.dot)
+		dot -Tpng "$VIM_FILEPATH" -o "$VIM_FILENOEXT".png
+		;;
+	*)
+		echo "unexpected file type: $VIM_FILEEXT"
+		;;
+esac
