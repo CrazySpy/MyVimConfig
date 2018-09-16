@@ -2,7 +2,7 @@ cd "$VIM_FILEDIR"
 
 case "$VIM_FILEEXT" in 
 	\.cpp|\.cxx)
-		clang++ "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g -std="c++11"
+		clang++ "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g -std="c++14"
 		;;
     \.c|\.cc)
 		clang "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g
