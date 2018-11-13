@@ -16,7 +16,7 @@ set smartindent
 set laststatus=2
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\ 
 
-set guifont=Source\ Code\ Pro:h14
+set guifont=Menlo:h12
 
 "arctouch还是关闭中键粘贴
 map <MiddleMouse> <Nop>
