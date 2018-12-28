@@ -2,7 +2,9 @@ cd "$VIM_FILEDIR"
 
 case "$VIM_FILEEXT" in 
 	\.cpp|\.cxx)
-		clang++ "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g -std="c++14"
+		#opencv config
+		opencv_config=$(pkg-config --cflags --libs opencv)
+		clang++ $opencv_config "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g -std="c++14"
 		;;
     \.c|\.cc)
 		clang "$VIM_FILEPATH" -o "$VIM_FILEDIR/$VIM_FILENOEXT" -g

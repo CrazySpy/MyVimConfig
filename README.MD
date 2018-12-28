@@ -8,22 +8,22 @@ How to use
 2. Copy the solarized.vim color scheme file to "~/.vim/colors/"(Your vim's default folder).
 3. Install [Vundle](https://github.com/VundleVim/Vundle.vim#quick-start). It's used to manage your Vim Plugin.
 4. Install all the plugins. I have configured the required plugins. You just need to type ":PluginInstall" under the normal mode, thanks to the Vundle plugin tool.
-5. Compile the [YouCompleteMe](https://github.com/Valloric/YouCompleteMe#installation).
-6. Configure the [vimmake](https://github.com/skywind3000/vimmake), as easy as code a bash shell. I have provided my configuration if you have no experience in coding bash shell.
+5. Compile the [YouCompleteMe](https://github.com/Valloric/YouCompleteMe#installation). And I have provided my .ycm_extra_conf.py. This file is used to set C++ syntax-check-compile parameters, and I add OpenCV library config into the file. If you want to run this config, pkg-config is needed.
+6. Configure the [vimmake](https://github.com/skywind3000/vimmake), as easy as code a bash shell. I have provided my configuration if you have no experience in coding bash shell. By default, OpenCV compile config is provided. If you want to run this config, pkg-config is needed.
 
 Default configuration
 -----
 #### Following plugins are used
-1. [Vundle](https://github.com/VundleVim/Vundle.vim): To manage vim plugins freely.
-2. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): Auto completion.
-3. [vim-session](https://github.com/xolox/vim-session): To auto open the windows which opened at last time.
-4. [nerdtree](https://github.com/scrooloose/nerdtree): To show the directory.
-5. [ListToggle](https://github.com/Valloric/ListToggle): Toggle windows rapidly.
-6. [delimitMate](https://github.com/Raimondi/delimitMate): Auto completion for '(', '{', etc. .
-7. [tagbar](https://github.com/majutsushi/tagbar): To show the function name, class name, variables, etc. , and locate them easily.
-8. [vim-misc](https://github.com/xolox/vim-misc): A support library.
-9. [vimmake](https://github.com/skywind3000/vimmake): To complie the code and run the programmes freely.
-10. [html5](https://github.com/othree/html5.vim): A HTML code formatter.
+8. [Vundle](https://github.com/VundleVim/Vundle.vim): To manage vim plugins freely.
+9. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe): Auto completion.
+10. [vim-session](https://github.com/xolox/vim-session): To auto open the windows which opened at last time.
+11. [nerdtree](https://github.com/scrooloose/nerdtree): To show the directory.
+12. [ListToggle](https://github.com/Valloric/ListToggle): Toggle windows rapidly.
+13. [delimitMate](https://github.com/Raimondi/delimitMate): Auto completion for '(', '{', etc. .
+14. [tagbar](https://github.com/majutsushi/tagbar): To show the function name, class name, variables, etc. , and locate them easily.
+15. [vim-misc](https://github.com/xolox/vim-misc): A support library.
+16. [vimmake](https://github.com/skywind3000/vimmake): To complie the code and run the programmes freely.
+17. [html5](https://github.com/othree/html5.vim): A HTML code formatter.
 
 #### Default hot key
 * Disable the paste function after pressing the middle key of the mouse(due to my Microsoft arctouch mouse)
@@ -42,27 +42,27 @@ MacVim配置文件
 
 使用方法
 ------
-1. 将.vimrc文件覆盖你当前的配置文件。
-2. 请将solarized.vim配色文件放到~/.vim/colors/下。
-3. 安装[Vundle](https://github.com/VundleVim/Vundle.vim#quick-start)插件管理工具。
-4. 在MacVim的normal模式下输入":PluginInstall"安装所有插件。
-5. 编译安装[YouCompleteMe](https://github.com/Valloric/YouCompleteMe#installation)。
-6. 配置[vimmake](https://github.com/skywind3000/vimmake)，其实就是一个简单的bash shell。在项目下的VimmakeConfig文件夹中提供了参考用的配置文件，请自行参考配置。
+18. 将.vimrc文件覆盖你当前的配置文件。
+19. 请将solarized.vim配色文件放到~/.vim/colors/下。
+20. 安装[Vundle](https://github.com/VundleVim/Vundle.vim#quick-start)插件管理工具。
+21. 在MacVim的normal模式下输入":PluginInstall"安装所有插件。
+22. 编译安装[YouCompleteMe](https://github.com/Valloric/YouCompleteMe#installation)。这里提供了.ycm_extra_conf.py用作代码检查时编译C++的配置，并且默认配置了OpenCV的相关参数。运行该配置需要pkg-config。
+23. 配置[vimmake](https://github.com/skywind3000/vimmake)，其实就是一个简单的bash shell。在项目下的VimmakeConfig文件夹中提供了参考用的配置文件，请自行参考配置。这里默认在C++的参数中提供了OpenCV的相关参数。运行该配置需要pkg-config。
 
 
 默认设置
 -----
 #### 本配置文件使用了以下插件
-1. [Vundle](https://github.com/VundleVim/Vundle.vim) 用于插件快速安装、禁用
-2. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) 用于快速补全
-3. [vim-session](https://github.com/xolox/vim-session) 用于记住上次打开窗口等功能
-4. [nerdtree](https://github.com/scrooloose/nerdtree) 目录树
-5. [ListToggle](https://github.com/Valloric/ListToggle) 用于快速toggle打开/关闭vim窗口
-6. [delimitMate](https://github.com/Raimondi/delimitMate) 括号等的自动匹配补全
-7. [tagbar](https://github.com/majutsushi/tagbar) 显示代码中的函数、变量、类等，并且可以快速定位
-8. [vim-misc](https://github.com/xolox/vim-misc) vim的支持库
-9. [vimmake](https://github.com/skywind3000/vimmake) 快速编译代码
-10. [html5](https://github.com/othree/html5.vim) 对HTML代码缩进
+24. [Vundle](https://github.com/VundleVim/Vundle.vim) 用于插件快速安装、禁用
+25. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) 用于快速补全
+26. [vim-session](https://github.com/xolox/vim-session) 用于记住上次打开窗口等功能
+27. [nerdtree](https://github.com/scrooloose/nerdtree) 目录树
+28. [ListToggle](https://github.com/Valloric/ListToggle) 用于快速toggle打开/关闭vim窗口
+29. [delimitMate](https://github.com/Raimondi/delimitMate) 括号等的自动匹配补全
+30. [tagbar](https://github.com/majutsushi/tagbar) 显示代码中的函数、变量、类等，并且可以快速定位
+31. [vim-misc](https://github.com/xolox/vim-misc) vim的支持库
+32. [vimmake](https://github.com/skywind3000/vimmake) 快速编译代码
+33. [html5](https://github.com/othree/html5.vim) 对HTML代码缩进
 
 #### 本配置文件默认快捷键
 * 鼠标中键粘贴关闭(因为我的arctouch容易误触)
